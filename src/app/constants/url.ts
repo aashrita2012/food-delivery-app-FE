@@ -3,5 +3,5 @@
 // export const API_URL_FC ='http://localhost:9092';
 // export const API_URL_UD ='http://localhost:9093';
 
-export const K8ExternalIp = 'http://k8s-default-awsingre-9aa4c55379-1437116080.us-east-1.elb.amazonaws.com';
+export const K8ExternalIp = 'http://k8s-default-awsingre-9aa4c55379-869155916.us-east-1.elb.amazonaws.com';
 
