@@ -63,7 +63,6 @@ stage('Cleanup Workspace') {
       }
     }
   }
-
 }
 
 
