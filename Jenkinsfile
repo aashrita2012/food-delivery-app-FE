@@ -51,7 +51,7 @@ tools {
           sed -i "s/image:.*/image: veerendra1976\\/food-delivery-app-fe:${VERSION}/" aws/angular-manifest.yml
         '''
 
-          sh 'git checkout master'
+          sh 'git checkout main'
           sh 'git add .'
           sh 'git commit -m "Update image tag"'
         sshagent(['git-ssh'])
