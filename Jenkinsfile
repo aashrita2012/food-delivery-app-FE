@@ -98,8 +98,7 @@ pipeline {
         ])
         script {
           // Set the new image tag with the Jenkins build number
-          sh ''
-          '
+          sh '''
           sed - i "s/image:.*/image: veerendra1976\\/food-delivery-app-fe:${VERSION}/"
           aws / angular - manifest.yml ''
           '
