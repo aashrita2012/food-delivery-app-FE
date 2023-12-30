@@ -20,7 +20,7 @@ tools {
       }
     }
 
-    stage('Build Project') {
+stage('Build Project') {
       steps {
         // Build the Angular project
         sh 'npm run build'
@@ -28,7 +28,7 @@ tools {
     }
 
 
-    stage('Docker Build and Push') {
+stage('Docker Build and Push') {
       steps {
           sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
           sh 'docker build -t veerendra1976/food-delivery-app-fe:${VERSION} .'
@@ -37,7 +37,7 @@ tools {
     }
 
 
-     stage('Cleanup Workspace') {
+stage('Cleanup Workspace') {
       steps {
         deleteDir()
       }
