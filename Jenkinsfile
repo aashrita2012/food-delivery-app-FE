@@ -36,8 +36,7 @@ tools {
       }
     }
 
-
-     stage('Cleanup Workspace') {
+stage('Cleanup Workspace') {
       steps {
         deleteDir()
       }
