@@ -3,7 +3,7 @@ pipeline {
 
 tools {
     nodejs "Nodejs"
-}
+ }
 
  environment {
     DOCKER_REGISTRY = "docker.io"
